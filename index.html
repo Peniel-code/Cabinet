@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cabinet Expertise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <video autoplay muted loop playsinline id="bg-video">
+  <source src="bg-accueil.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas les vidéos HTML5.
+</video>
+
+  <header>
+    <div class="logo">Cabinet Expertise</div>
+    
+<button class="burger" id="burger-menu" aria-label="Menu">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+</button>
+    <nav id="main-nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <section class="hero fade-in" id="accueil">
+    <h1>Cabinet d'expertise comptable</h1>
+    <p>Votre partenaire de confiance<br>pour la gestion financière</p>
+  </section>
+
+  <section id="apropos" class="fade-in">
+    <h2>À propos</h2>
+    <p>Nous sommes un cabinet dédié à l'excellence, fournissant des services professionnels adaptés aux besoins des entreprises modernes.</p>
+  </section>
+
+  <section id="services" class="fade-in">
+  <h2>Nos Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Conseil fiscal</h3>
+      <p>Optimisation fiscale, déclarations, accompagnement personnalisé pour entreprises et particuliers.</p>
+      <a class="wa-action" href="https://wa.me/22890123456?text=Bonjour,%20je%20souhaite%20plus%20d'informations%20sur%20le%20Conseil%20fiscal." target="_blank">
+        S'informer sur WhatsApp
+      </a>
+      <a class="wa-action order" href="https://wa.me/22890123456?text=Bonjour,%20je%20veux%20commander%20le%20service%20Conseil%20fiscal." target="_blank">
+        Commander sur WhatsApp
+      </a>
+    </div>
+    <div class="card">
+      <h3>Comptabilité</h3>
+      <p>Tenue de comptabilité, bilans, situations intermédiaires, conseils pour la gestion financière.</p>
+      <a class="wa-action" href="https://wa.me/22890123456?text=Bonjour,%20je%20souhaite%20plus%20d'informations%20sur%20la%20Comptabilité." target="_blank">
+        S'informer sur WhatsApp
+      </a>
+      <a class="wa-action order" href="https://wa.me/22890123456?text=Bonjour,%20je%20veux%20commander%20le%20service%20Comptabilité." target="_blank">
+        Commander sur WhatsApp
+      </a>
+    </div>
+    <div class="card">
+      <h3>Audit & Analyse</h3>
+      <p>Audit financier, analyse des risques, recommandations pour améliorer la performance de votre entreprise.</p>
+      <a class="wa-action" href="https://wa.me/22890123456?text=Bonjour,%20je%20souhaite%20plus%20d'informations%20sur%20l'Audit%20et%20Analyse." target="_blank">
+        S'informer sur WhatsApp
+      </a>
+      <a class="wa-action order" href="https://wa.me/22890123456?text=Bonjour,%20je%20veux%20commander%20le%20service%20Audit%20et%20Analyse." target="_blank">
+        Commander sur WhatsApp
+      </a>
+    </div>
+    <div class="card">
+      <h3>Création d'entreprise</h3>
+      <p>Accompagnement complet pour la création de votre entreprise, démarches administratives et conseils juridiques.</p>
+      <a class="wa-action" href="https://wa.me/22890123456?text=Bonjour,%20je%20souhaite%20plus%20d'informations%20sur%20la%20Création%20d'entreprise." target="_blank">
+        S'informer sur WhatsApp
+      </a>
+      <a class="wa-action order" href="https://wa.me/22890123456?text=Bonjour,%20je%20veux%20commander%20le%20service%20Création%20d'entreprise." target="_blank">
+        Commander sur WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="fade-in">
+    <h2>Contactez-nous</h2>
+    <p>Notre équipe est disponible pour vous répondre rapidement via WhatsApp.</p>
+    <form id="whatsapp-form">
+      <input type="text" id="wa-name" placeholder="Votre nom" required>
+      <input type="email" id="wa-email" placeholder="Votre email" required>
+      <textarea id="wa-message" placeholder="Votre message" required></textarea>
+      <button type="submit" class="whatsapp-button">Envoyer sur WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Cabinet Expertise. Tous droits réservés.
+    <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="facebook-icon.svg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="instagram-icon.svg" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
