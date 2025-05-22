@@ -348,3 +348,59 @@ footer {
   z-index: -1; /* met la vidéo derrière tout le reste */
   opacity: 0.7; /* optionnel : ajuster la visibilité */
 }
+
+/* Responsivité section services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.services .card {
+  flex: 1 1 300px;
+  min-width: 260px;
+  max-width: 350px;
+  margin: 12px;
+  box-sizing: border-box;
+}
+
+/* Déjà présent, mais on améliore pour mobile */
+@media (max-width: 900px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services .card {
+    max-width: 95vw;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+/* Pour très petits écrans */
+@media (max-width: 500px) {
+  .services .card {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsivité vidéo de background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7;
+  pointer-events: none; /* évite tout problème de clic */
+}
+
+/* Pour éviter le scroll horizontal à cause de la vidéo sur mobile */
+body {
+  overflow-x: hidden;
+}
